@@ -22,7 +22,7 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-const url = "mongodb://localhost:27017/UserDB";
+const url = "mongodb+srv://dbUser:test@cluster0.ithat.mongodb.net/UserDB";
 mongoose.connect(url, {
   useNewUrlParser: true,
   useUnifiedTopology: true
